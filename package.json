@@ -1,0 +1,27 @@
+{
+  "name": "csv-to-json",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/mizdra/csv-to-json.git",
+  "author": "mizdra <pp.mizdra@gmail.com>",
+  "license": "MIT",
+  "bin": {
+    "csv2json": "./bin/csv2json.js"
+  },
+  "scripts": {
+    "start": "./bin/csv2json.js sample/nature_names.csv sample/dist",
+    "clean": "del sample/dist"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "csv-parse": "^1.1.9",
+    "es6-promisify": "^5.0.0",
+    "object.entries": "^1.0.4"
+  },
+  "devDependencies": {
+    "del-cli": "^0.2.1"
+  },
+  "engines": {
+    "node" : ">=6.9.2"
+  }
+}
